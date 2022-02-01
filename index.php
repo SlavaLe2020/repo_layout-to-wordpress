@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 
     <main class="main">
         <div class="container">
@@ -123,3 +124,5 @@
             </div>
         </div>
     </main>
+
+    <?php get_footer(); ?>
