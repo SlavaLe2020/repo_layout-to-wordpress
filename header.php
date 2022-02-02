@@ -17,7 +17,7 @@
 <body>
     <header class="header" style="background-image: url(img/bg.jpg)">
         <div class="header__inner">
-            <img src="img/home.png" alt="">
+            <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/home.png" alt="">
             <div class="header__name">
                 timber House
             </div>

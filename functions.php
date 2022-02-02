@@ -18,6 +18,8 @@ function timber_scripts() {
 	wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js' );
 	wp_enqueue_script( 'jquery' );
 	
-	// wp_enqueue_script('script-name', get_template_directory_uri() .'/js/example.js', array(), '1.0', true );
+	wp_enqueue_script('magnific-script', get_template_directory_uri() .'/assets/js/jquery.magnific-popup.min.js', array(jquery), null, true );
+
+	wp_enqueue_script('main-script', get_template_directory_uri() .'/assets/js/main.js', array(jquery), null, true );
 }
 }
