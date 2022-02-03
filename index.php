@@ -15,7 +15,7 @@
                 ГАРАНТИЯ НА ДОМА И БАНИ ИЗ БРУСА 3 ГОДА
             </div>
             <div class="main__img">
-                <img src="img/main-img.png" alt="">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/main-img.png" alt="">
             </div>
             <div class="project">
                 <div class="project__title">
@@ -91,7 +91,7 @@
 
         </div>
         <div class="download">
-            <img src="img/home-download.png" alt="">
+            <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/home-download.png" alt="">
             <div class="download__link">
                 <a href="#">СКАЧАТЬ ВЕСЬ КАТАЛОГ ДОМОВ</a>
             </div>
@@ -120,7 +120,7 @@
                 </div>
             </div>
             <div class="main__img">
-                <img src="img/main-img.png" alt="">
+                <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/main-img.png" alt="">
             </div>
         </div>
     </main>
