@@ -5,14 +5,10 @@
 
 
             <div class="main__title">
-                Строительство домов и бань из строганного и профилированного бруса
+                <?php the_field('main__title') ?> 
             </div>
             <div class="main__text">
-
-                За 10 лет мы возвели больше 250 домов и бань из бруса
-                ИМЕЕМ БОЛЬШОЙ ОПЫТ В СТРОИТЕЛЬСТВЕ
-                гарантируем качество и надежность всех построенных нами объектов
-                ГАРАНТИЯ НА ДОМА И БАНИ ИЗ БРУСА 3 ГОДА
+                <?php the_field('main__text') ?>
             </div>
             <div class="main__img">
                 <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/main-img.png" alt="">
