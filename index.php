@@ -95,25 +95,13 @@
         <div class="container">
             <div class="gallery">
                 <div class="gallery__title">
-                    ФОТОГРАФИИ НАШИХ РАБОТ
+                    <?php the_field('gallery__title') ?> 
                 </div>
                 <div class="gallery__text">
-                    некоторые фотографии построенных нами домов и бань из бруса
+                    <?php the_field('gallery__text') ?> 
                 </div>
-                <div class="gallery__inner">
-                <?php the_field('photo') ?> 
-                    <!-- <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a> -->
+                <div id="gallery__inner">
+                    <?php the_field('photo') ?> 
                 </div>
             </div>
             <div class="main__img">
