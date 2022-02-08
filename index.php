@@ -89,7 +89,7 @@
         <div class="download">
             <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/home-download.png" alt="">
             <div class="download__link">
-                <a href="#">СКАЧАТЬ ВЕСЬ КАТАЛОГ ДОМОВ</a>
+                <a href="<?php the_field('download__link') ?>" download>СКАЧАТЬ ВЕСЬ КАТАЛОГ ДОМОВ</a>
             </div>
         </div>
         <div class="container">
