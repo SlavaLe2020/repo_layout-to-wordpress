@@ -18,6 +18,46 @@
                     ПРОЕКТЫ ДОМОВ ИЗ БРУСА
                 </div>
                 <div class="project__item">
+
+                    <?php
+$posts = get_field('project__item');
+
+if( $posts ): ?>
+    <ul>
+    <?php foreach( $posts as $post ): ?>
+
+        // Setup this post for WP functions (variable must be named $post).
+        <?php setup_postdata($post); ?>
+        <li>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <span>A custom field from this post: <?php the_field( 'author' ); ?></span>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+    <?php wp_reset_postdata(); ?>
+<?php endif; ?>
+                    <!-- <div class="project__name">
+                        ДОМ #1
+                    </div>
+                    <div class="project__size">
+                        Размер дома: 6 x 6
+                    </div>
+                    <div class="project__area">
+                        Общая площадь дома: 54 кв. м
+                    </div>
+                    <div class="project__price">
+                        Стоимость - 402 000 рублей
+                    </div>
+                    <div class="project__images">
+                        <div class="project__images-item">
+                            <img src="img/project-1.jpg" alt="">
+                        </div>
+                        <div class="project__images-item">
+                            <img src="img/project-2.jpg" alt="">
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <div class="project__item">
                     <div class="project__name">
                         ДОМ #1
                     </div>
@@ -38,8 +78,8 @@
                             <img src="img/project-2.jpg" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="project__item">
+                </div> -->
+                <!-- <div class="project__item">
                     <div class="project__name">
                         ДОМ #1
                     </div>
@@ -60,29 +100,7 @@
                             <img src="img/project-2.jpg" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="project__item">
-                    <div class="project__name">
-                        ДОМ #1
-                    </div>
-                    <div class="project__size">
-                        Размер дома: 6 x 6
-                    </div>
-                    <div class="project__area">
-                        Общая площадь дома: 54 кв. м
-                    </div>
-                    <div class="project__price">
-                        Стоимость - 402 000 рублей
-                    </div>
-                    <div class="project__images">
-                        <div class="project__images-item">
-                            <img src="img/project-1.jpg" alt="">
-                        </div>
-                        <div class="project__images-item">
-                            <img src="img/project-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
